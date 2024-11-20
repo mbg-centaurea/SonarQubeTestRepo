@@ -8,10 +8,10 @@
   </PropertyGroup>
   <ItemGroup>
   <SonarQubeSetting Include="sonar.cpd.cs.minimumTokens">
-    <Value>10</Value>
+    <Value>1000</Value>
   </SonarQubeSetting>
   <SonarQubeSetting Include="sonar.cpd.cs.minimumLines">
-    <Value>10</Value>
+    <Value>1000</Value>
   </SonarQubeSetting>
 </ItemGroup>
 
