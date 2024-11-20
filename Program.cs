@@ -16,37 +16,6 @@ class Program
         }
         Console.WriteLine("+" + new String('-', n * 2 - 1) + "+");
     }
-    static void FigureB(int n)
-    {
-        Console.WriteLine("+" + new String('-', n * 2 - 1) + "+");
-        for (int i = 1; i < n; i++)
-        {
-            string side = new('_', n - i);
-            Console.WriteLine("|" + side + new String('b', i * 2 - 1) + side + "|");
-        }
-        for (int i = n; i > 0; i--)
-        {
-            string side = new('_', n - i);
-            Console.WriteLine("|" + side + new String('b', i * 2 - 1) + side + "|");
-        }
-        Console.WriteLine("+" + new String('-', n * 2 - 1) + "+");
-    }
-
-    static void FigureC(int n)
-    {
-        Console.WriteLine("+" + new String('-', n * 2 - 1) + "+");
-        for (int i = 1; i < n; i++)
-        {
-            string side = new('_', n - i);
-            Console.WriteLine("|" + side + new String('c', i * 2 - 1) + side + "|");
-        }
-        for (int i = n; i > 0; i--)
-        {
-            string side = new('_', n - i);
-            Console.WriteLine("|" + side + new String('c', i * 2 - 1) + side + "|");
-        }
-        Console.WriteLine("+" + new String('-', n * 2 - 1) + "+");
-    }
     static int Main(string[] args)
     {
         if (args.Length != 1)
@@ -74,8 +43,6 @@ class Program
             Console.WriteLine($"n must be between 1 and 20, provided: {n}");
         }
         FigureA(n);
-        FigureB(n);
-        FigureC(n);
         return 0;
     }
 }
